@@ -1,0 +1,20 @@
+/+++++++++++++++++++++++++++CALCULATOR_(USED_SWITCH)+++++++++++++++++
+let num1 = Number(prompt('Number 1:'))
+let num2 = Number(prompt('Number 2:'))
+let operator = prompt('1. Sum "+"\n2. Sub "-"\n3. Mult "*"\n4. Div "/"\n')
+switch (operator){
+  case '1':
+    document.writeln(`${num1} + ${num2} =` + (num1 + num2));
+    break;
+  case '2':
+    document.writeln(`${num1} - ${num2} =` + (num1 - num2));
+    break;
+  case '3':
+    document.writeln(`${num1} * ${num2} =` + (num1 * num2));
+    break;
+  case '4':
+    document.writeln(`${num1} / ${num2} =` + (num1 / num2));
+    break;
+  default:
+    document.writeln('please choose right operator and try again')
+}
